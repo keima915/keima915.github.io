@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    font-family: "segoe ui";
+    color: rgb(128, 0, 128);
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: scroll;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 128, 255, 0.5);
+}
+
+.background {
+    top: 100px;
+    opacity: 0.2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.bannerbg {
+    opacity: 0.5;
+    position: absolute;
+    height: 100px;
+    width: 100%;
+}
+
+.image {
+    display: inline-block;
+    height: auto;
+    width: 100px;
+}
+
+.avatar {
+    display: inline-block;
+    height: 100%;
+}
+
+.banner {
+    font-size: 35px;
+    background-color: rgba(255, 128, 255, 0.3);
+    height: 100px;
+}
+
+.fixed {
+    position: fixed;
+}
+
+.absolute {
+    position: absolute;
+}
+
+.block {
+    display: block;
+}
+
+.inline {
+    display: inline;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.height-inherit {
+    height: inherit;
+}
+
+.autowidth100 {
+    height: auto;
+    width: 100;
+}
+
+.width100 {
+    width: 100px;
+}
+
+.wide {
+    width: 100%;
+}
+
+.autoheight100 {
+    width: auto;
+    height: 100;
+}
+
+.height100 {
+    height: 100px;
+}
+
+.high {
+    height: 100%;
+}
+
+.center {
+    width: 100%;
+    text-align: center;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+.top {
+    top: 0;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.font20 {
+    font-size: 20px;
+}
+
+.font25 {
+    font-size: 25px;
+}
+
+.up100percent {
+    vertical-align: 10px;
+}
+
+.down100percent {
+    vertical-align: -100%;
+}
+
+/* Image hover fade in */
+
+.container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+    transition: .3s ease;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+/* Marquee */
+
+.marqueeminusone,
+.marqueezero {
+    line-height: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: inline-block;
+}
+
+.marqueeminusone span {
+    display: inline-block;
+    animation: marqueeminusone 15s linear infinite;
+}
+
+.marqueezero span {
+    display: inline-block;
+    animation: marqueezero 15s linear infinite;
+}
+
+@keyframes marqueeminusone {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    100% {
+        transform: translate(0%, 100%);
+    }
+}
+
+@keyframes marqueezero {
+    0% {
+        transform: translate(0%, -100%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+/* Test */
+
+#square {
+    width: 100px;
+    height: 100px;
+    background: rgb(255, 128, 255);
+}

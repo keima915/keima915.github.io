@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    font-family: "segoe ui";
+    padding: 0;
+    border: 0;
+    margin: 0;
+    overflow: hidden;
+    /*    overflow: hidden;*/
+}
+
+div {
+    display: inline-block;
+}
+
+.banner {
+    position: sticky;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    height: 10vh;
+    width: 100vw;
+    background-color: pink;
+
+    font-size: 3vh;
+}
+
+.bannerbg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 10vh;
+    opacity: 0.5;
+}
+
+.avatar {
+    height: 10vh;
+}
+
+.banner-left {
+    position: absolute;
+    height: 10vh;
+    width: calc(50vw - 5vh);
+}
+
+.banner-left span {
+    position: absolute;
+    top: 6vh;
+    right: 0;
+}
+
+.banner-right {
+    position: absolute;
+    right: 0;
+    height: 10vh;
+    width: calc(50vw - 5vh);
+}
+
+.banner-right span {
+    position: absolute;
+    top: 6vh;
+}
+
+.image {
+    display: inline-block;
+}
+
+.noSpace {
+    font-size: 0;
+}
+
+/* Avatar fade effect */
+
+.container {
+    position: absolute;
+    top: 0;
+    left: calc(50vw - 5vh);
+    width: 10vh;
+    height: 10vh;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    width: 10vh;
+    height: 10vh;
+    transition: .3s ease;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+/* body */
+
+.body {
+    overflow: scroll;
+    width: 100vw;
+}
+
+.body img {
+    overflow: scroll;
+}

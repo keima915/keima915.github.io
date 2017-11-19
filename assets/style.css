@@ -1,0 +1,341 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+
+div {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* The banner at the right */
+
+.banner {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 4vw;
+    background-color: rgb(255, 182, 193);
+
+    color: white;
+    font-size: 1.5vw;
+    z-index: 10000;
+}
+
+.banner-text {
+    position: fixed;
+    top: 4vw;
+    width: 4vw;
+    text-align: center;
+}
+
+.banner-icons {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 4vw;
+    line-height: 5vh;
+    transition: .2s ease;
+}
+
+.banner-icons:hover .banner-icon {
+    opacity: 0.3;
+}
+
+.banner-icon {
+    width: 1.75vw;
+    filter: grayscale(50%);
+    opacity: 0.7;
+    transition: .2s ease;
+}
+
+.banner-icon:hover {
+    opacity: 1 !important;
+}
+
+.avatar {
+    height: 4vw;
+}
+
+/* Avatar fade effect */
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4vw;
+    height: 4vw;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    width: 4vw;
+    height: 4vw;
+    transition: .3s ease;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+/* labels at the left */
+
+.labels {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 4vw;
+    background-color: rgb(255, 182, 193);
+
+    color: white;
+    font-size: 1.5vw;
+    font-weight: lighter;
+    z-index: 10000;
+}
+
+.labels * {
+    display: table;
+    text-align: center;
+}
+
+.labels * * {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.labels-anime {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 40vh;
+    width: 4vw;
+}
+
+.labels-other {
+    position: fixed;
+    left: 0;
+    top: 40vh;
+    height: 40vh;
+    width: 4vw;
+}
+
+.labels-me {
+    position: fixed;
+    left: 0;
+    top: 80vh;
+    height: 20vh;
+    width: 4vw;
+}
+
+.labels a {
+    transition: 0.2s ease;
+}
+
+.labels a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.fade-this * *:hover {
+    opacity: 0.5;
+}
+
+/* body */
+
+* {
+    overflow: hidden;
+}
+
+.body {
+    overflow: hidden;
+    /*    position: absolute;*/
+    width: 96vw;
+    min-width: 96vw;
+    min-height: 100vh;
+    background-color: rgba(255, 182, 193, 0.4);
+}
+
+.body * {
+    max-width: 100000000000000vw;
+}
+
+.image {
+    display: inline-block;
+}
+
+.inline {
+    display: inline;
+}
+
+.fixed {
+    display: fixed;
+}
+
+.noSpace {
+    font-size: 0;
+}
+
+.index0 {
+    z-index: 0;
+}
+
+.anime,
+.others {
+    max-width: 1000vw;
+    width: 1000vw;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.anime *,
+.others * {
+    z-index: 1000;
+}
+
+.anime img,
+.others img {
+    overflow: hidden;
+    height: 40vh;
+    width: auto;
+}
+
+.me img {
+    overflow: hidden;
+    height: 20vh;
+    width: auto;
+}
+
+.me .bg {
+    position: fixed;
+    top: 80vh;
+    left: 4vw;
+    width: 92vw;
+    height: 20vh;
+    opacity: 1;
+    z-index: -100;
+}
+
+/* Marquee */
+
+.marqueeminusone,
+.marqueeminuszero {
+    position: fixed;
+    width: 100000000000000vw;
+    top: 0;
+    left: 0;
+    display: inline-block;
+}
+
+.marqueeone,
+.marqueezero {
+    position: fixed;
+    width: 100000000000000vw;
+    top: 80vh;
+    left: 0;
+    display: inline-block;
+}
+
+.marqueeplusone,
+.marqueepluszero {
+    position: fixed;
+    width: 100000000000000vw;
+    top: 40vh;
+    left: 0;
+    display: inline-block;
+}
+
+.marqueeminusone span {
+    display: inline-block;
+    animation: marqueeminusone 15s linear infinite;
+}
+
+.marqueeminuszero span {
+    display: inline-block;
+    animation: marqueeminuszero 15s linear infinite;
+}
+
+.marqueeone span {
+    display: inline-block;
+    animation: marqueeone 15s linear infinite;
+}
+
+.marqueezero span {
+    display: inline-block;
+    animation: marqueezero 15s linear infinite;
+}
+
+.marqueeplusone span {
+    display: inline-block;
+    animation: marqueeplusone 15s linear infinite;
+}
+
+.marqueepluszero span {
+    display: inline-block;
+    animation: marqueepluszero 15s linear infinite;
+}
+
+@keyframes marqueeminusone {
+    0% {
+        transform: translate(-100%, 0%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes marqueeminuszero {
+    0% {
+        transform: translate(-50%, 0%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes marqueeone {
+    0% {
+        transform: translate(-100%, 0%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes marqueezero {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    100% {
+        transform: translate(100%, 0%);
+    }
+}
+
+@keyframes marqueeplusone {
+    0% {
+        transform: translate(100%, 0%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+}
+
+@keyframes marqueepluszero {
+    0% {
+        transform: translate(0%, 0%);
+    }
+    100% {
+        transform: translate(-50%, 0%);
+    }
+}

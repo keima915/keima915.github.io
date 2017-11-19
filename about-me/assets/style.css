@@ -1,0 +1,43 @@
+.body {
+    display: block;
+    width: 92%;
+    height: 100vh;
+
+    position: absolute;
+    left: 4%;
+    top: 0;
+
+    color: white;
+}
+
+.body .foreground {
+    opacity: 0;
+    transition: 0.2s ease;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    opacity: 0.2;
+}
+
+/*
+.body:hover .background {
+    opacity: 0.2;
+}
+*/
+
+.body:hover .foreground {
+    opacity: 1;
+}
+
+.text {
+    overflow: visible;
+    font-size: 50vh;
+    padding: 10px;
+    display: inline-block;
+    background-color: rgba(255, 182, 193, 0.8);
+}

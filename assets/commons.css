@@ -1,0 +1,137 @@
+/* Body */
+
+body {
+    background-color: rgba(255, 182, 193, 0.4);
+}
+
+/* Right Banner */
+
+.banner {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 4%;
+    background-color: rgb(255, 182, 193);
+
+    color: white;
+    font-size: 1.5vw;
+    z-index: 10000;
+}
+
+.banner-text {
+    position: fixed;
+    top: 4vw;
+    width: 4%;
+    text-align: center;
+}
+
+.banner-icons {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 4%;
+    line-height: 5vh;
+    transition: .2s ease;
+}
+
+.banner-icons:hover .banner-icon {
+    opacity: 0.3;
+}
+
+.banner-icon {
+    width: 1.75%;
+    filter: grayscale(50%);
+    opacity: 0.7;
+    transition: .2s ease;
+}
+
+.banner-icon:hover {
+    opacity: 1 !important;
+}
+
+.avatar {
+    width: 100%;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    width: 100%;
+    transition: .3s ease;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+
+/* Left Banner */
+
+.labels {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 4%;
+    background-color: rgb(255, 182, 193);
+
+    color: white;
+    font-size: 1.75vw;
+    font-weight: lighter;
+    z-index: 10000;
+}
+
+.labels * {
+    display: table;
+    text-align: center;
+}
+
+.labels * * {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.labels-anime {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 40vh;
+    width: 4%;
+}
+
+.labels-other {
+    position: fixed;
+    left: 0;
+    top: 40vh;
+    height: 40vh;
+    width: 4%;
+}
+
+.labels-me {
+    position: fixed;
+    left: 0;
+    top: 80vh;
+    height: 20vh;
+    width: 4%;
+}
+
+.labels a {
+    transition: 0.2s ease;
+    text-decoration: none;
+    color: inherit;
+}
+
+.labels a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
